@@ -1,54 +1,133 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Ragul Prabakaran | Java Developer</title>
-  <link rel="stylesheet" href="style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet" />
+  <style>
+    body {
+      font-family: 'Inter', sans-serif;
+      background: linear-gradient(to bottom right, #f0f4f8, #e0e7ff);
+      margin: 0;
+      color: #333;
+    }
+    header {
+      background-color: #1e3a8a;
+      color: white;
+      padding: 2rem;
+      text-align: center;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+    }
+    header h1 {
+      font-size: 2.5rem;
+      margin: 0;
+    }
+    header p {
+      font-size: 1.2rem;
+    }
+    section {
+      max-width: 800px;
+      margin: 2rem auto;
+      background: white;
+      border-radius: 12px;
+      padding: 2rem;
+      box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+    }
+    h2 {
+      color: #1e3a8a;
+      border-bottom: 2px solid #c7d2fe;
+      padding-bottom: 0.5rem;
+    }
+    ul li {
+      margin: 0.5rem 0;
+    }
+    a {
+      color: #2563eb;
+      text-decoration: none;
+    }
+    a:hover {
+      text-decoration: underline;
+    }
+    footer {
+      text-align: center;
+      padding: 1rem;
+      background-color: #e0e7ff;
+      font-size: 0.9rem;
+    }
+    .highlight {
+      background-color: #fef3c7;
+      padding: 0.3rem 0.5rem;
+      border-radius: 4px;
+    }
+  </style>
 </head>
 <body>
   <header>
-    <h1>Ragul Prabakaran</h1>
-    <p>Application Java Developer • Spring Boot • Camunda BPM</p>
+    <h1>Ragul Prabakaran</h1>
+    <p>Java Developer | Spring Boot | Camunda BPM | Cloud Enthusiast</p>
   </header>
-  <section id="about">
+
+  <section>
     <h2>About Me</h2>
-    <p>Accomplished System Engineer with a robust background in Java development…</p>
+    <p>I am a passionate and experienced <strong>System Engineer</strong> with a proven track record in Java backend development, Camunda BPM, and cloud-native architecture. My career has been built around delivering efficient, scalable, and resilient applications. I’m a team leader and problem solver who thrives on innovation, automation, and excellence.</p>
   </section>
-  <section id="skills">
+
+  <section>
     <h2>Skills & Tools</h2>
     <ul>
-      <li>Java, Spring Boot, Java EE</li>
-      <li>Camunda BPM, DMN, SQL (Oracle, Hibernate)</li>
-      <li>AWS (ECS, S3, Lambda), Datadog, Jenkins</li>
+      <li>Languages & Frameworks: Java, Spring Boot, Java EE</li>
+      <li>Workflow Engines: Camunda BPM, DMN Modeling</li>
+      <li>Database: Oracle, SQL, Hibernate, pgAdmin</li>
+      <li>Cloud & DevOps: AWS (ECS, S3, Lambda), Jenkins, Datadog, CloudWatch</li>
+      <li>Tools: IntelliJ, Eclipse, Postman, Jira, Confluence</li>
     </ul>
   </section>
-  <section id="experience">
-    <h2>Experience</h2>
+
+  <section>
+    <h2>Work Experience</h2>
+    <p><strong>Tata Consultancy Services</strong> (2022–Present) — <span class="highlight">System Engineer</span></p>
     <ul>
-      <li><strong>TCS</strong> – System Engineer (Jun 2022 – Present)</li>
-      <li><strong>Hughes Systique</strong> – Engineer (Dec 2021 – May 2022)</li>
-      <li><strong>Amiti Software</strong> – Software Dev (Sep 2019 – Dec 2021)</li>
+      <li>Led a team of 5 developers to successfully design and deliver a business-critical Spring Boot application integrated with Camunda workflows.</li>
+      <li>Built custom DMN models for decision logic and automated task assignments in BPM.</li>
+      <li>Integrated AWS services like ECS and Lambda to scale applications with infrastructure-as-code principles.</li>
+    </ul>
+
+    <p><strong>Hughes Systique</strong> (2021–2022) — <span class="highlight">Engineer</span></p>
+    <ul>
+      <li>Collaborated on an analytics dashboard system for vendor data analysis, streamlining delivery prediction processes.</li>
+      <li>Reduced cloud infrastructure costs by optimizing resource allocation with performance monitoring tools.</li>
+    </ul>
+
+    <p><strong>Amiti Software Technologies</strong> (2019–2021) — <span class="highlight">Software Developer</span></p>
+    <ul>
+      <li>Owned end-to-end feature delivery in a Java EE environment, covering everything from database schema to API integration.</li>
+      <li>Mentored junior developers through code reviews and project walkthroughs.</li>
     </ul>
   </section>
-  <section id="projects">
+
+  <section>
     <h2>Projects</h2>
     <ul>
-      <li><a href="#">Morisons Supermarket Stock Handler</a></li>
-      <li><a href="#">Nykaa Online Product Selling Interface</a></li>
-      <li><a href="#">Adesa Car Auction Service Interface</a></li>
+      <li><strong>Morisons Supermarket Stock Handler</strong>: Developed a robust Spring Boot service for live inventory tracking and alerts, integrated with Camunda workflows for restock triggers.</li>
+      <li><strong>Nykaa Online Product Platform</strong>: Built scalable microservices for catalog browsing and checkout pipeline, implemented monitoring with Datadog.</li>
+      <li><strong>Adesa Car Auction Interface</strong>: Designed and deployed backend logic for real-time car bidding and user notifications using AWS and Java.</li>
     </ul>
   </section>
-  <section id="resume">
+
+  <section>
     <h2>Resume</h2>
-    <p><a href="RagulResume-2025.pdf" download>Download PDF</a></p>
+    <p><a href="RagulResume-2025.pdf" download>Download Resume (PDF)</a></p>
   </section>
-  <section id="contact">
+
+  <section>
     <h2>Contact</h2>
     <p>Email: <a href="mailto:ragulprabakaran@gmail.com">ragulprabakaran@gmail.com</a></p>
     <p>LinkedIn: <a href="https://www.linkedin.com/in/ragul-prabakaran-7a39a1282" target="_blank">linkedin.com/in/ragul-prabakaran-7a39a1282</a></p>
   </section>
+
   <footer>
-    <p>&copy; 2025 Ragul Prabakaran</p>
+    <p>&copy; 2025 Ragul Prabakaran. All rights reserved.</p>
   </footer>
 </body>
 </html>
