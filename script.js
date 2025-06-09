@@ -69,7 +69,7 @@ document.addEventListener('DOMContentLoaded', function() {
 //            this.reset(); // Clear the form
 //        });
 //    }
-//});
+});
     document.getElementById("contact-form").addEventListener("submit", function (e) {
       e.preventDefault();
 
