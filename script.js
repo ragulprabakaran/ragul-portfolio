@@ -60,16 +60,9 @@ document.addEventListener('DOMContentLoaded', function() {
     window.addEventListener('scroll', highlightNavLink);
     highlightNavLink(); // Call on load to set initial active link
 
-    // Basic form submission handling (for demonstration, won't send actual email without backend)
-//    const contactForm = document.querySelector('#contact form');
-//    if (contactForm) {
-//        contactForm.addEventListener('submit', function(e) {
-//            e.preventDefault();
-//            alert('Thank you for your message! (This is a demo; actual submission requires a backend.)');
-//            this.reset(); // Clear the form
-//        });
-//    }
 });
+
+// Basic form submission handling (for demonstration, won't send actual email without backend)
     document.getElementById("contact-form").addEventListener("submit", function (e) {
       e.preventDefault();
 
@@ -80,4 +73,5 @@ document.addEventListener('DOMContentLoaded', function() {
           alert("Failed to send message. Try again.");
           console.error(error);
     });
+    this.reset(); // Clear the form
     });
