@@ -61,12 +61,23 @@ document.addEventListener('DOMContentLoaded', function() {
     highlightNavLink(); // Call on load to set initial active link
 
     // Basic form submission handling (for demonstration, won't send actual email without backend)
-    const contactForm = document.querySelector('#contact form');
-    if (contactForm) {
-        contactForm.addEventListener('submit', function(e) {
-            e.preventDefault();
-            alert('Thank you for your message! (This is a demo; actual submission requires a backend.)');
-            this.reset(); // Clear the form
-        });
-    }
-});
+//    const contactForm = document.querySelector('#contact form');
+//    if (contactForm) {
+//        contactForm.addEventListener('submit', function(e) {
+//            e.preventDefault();
+//            alert('Thank you for your message! (This is a demo; actual submission requires a backend.)');
+//            this.reset(); // Clear the form
+//        });
+//    }
+//});
+    document.getElementById("contact-form").addEventListener("submit", function (e) {
+      e.preventDefault();
+
+      emailjs.sendForm('service_o53e4ah', 'template_c61031e', this)
+        .then(function () {
+          alert("Message sent successfully!");
+        }, function (error) {
+          alert("Failed to send message. Try again.");
+          console.error(error);
+    });
+    });

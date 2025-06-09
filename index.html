@@ -8,6 +8,12 @@
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&family=Open+Sans:wght@300;400;600&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
     <link rel="stylesheet" href="style.css">
+    <script type="text/javascript" src="https://cdn.emailjs.com/dist/email.min.js"></script>
+    <script type="text/javascript">
+        (function () {
+          emailjs.init("e-HAO9mvzgc90XK1n6xUQ");
+       })();
+    </script>
 </head>
 <body>
 
@@ -203,7 +209,7 @@
                 <div class="card shadow-lg contact-card">
                     <div class="card-body">
                         <p class="text-center mb-4">Feel free to reach out to me for collaborations or inquiries!</p>
-                        <form>
+                        <form id="contact-form">
                             <div class="mb-3">
                                 <label for="name" class="form-label">Name</label>
                                 <input type="text" class="form-control" id="name" required>
